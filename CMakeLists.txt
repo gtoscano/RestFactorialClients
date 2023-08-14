@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(MultiLanguageBindings)
 
 # List of subdirectories
-set(SUBDIRS cpp csharp java)
+set(SUBDIRS cpp csharp java rust)
 
 # Add subdirectories for each language, setting specific output directories
 foreach(SUBDIR ${SUBDIRS})
