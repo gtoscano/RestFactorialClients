@@ -3,7 +3,7 @@ use serde_json::Value;
 use std::error::Error;
 
 async fn get_factorial() -> Result<bool, Box<dyn Error>> {
-    let url = "http://localhost:9080/factorial/5";
+    let url = "http://localhost:8000/factorial/5";
     let response = reqwest::get(url).await?;
 
     if response.status() != 200 {

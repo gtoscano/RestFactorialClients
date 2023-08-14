@@ -1,7 +1,7 @@
 import requests
 
 def get_factorial():
-    url = "http://localhost:9080/factorial/5"
+    url = "http://localhost:8000/factorial/5"
     response = requests.get(url)
 
     if response.status_code != 200:

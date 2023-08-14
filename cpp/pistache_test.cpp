@@ -3,7 +3,7 @@
 #include <nlohmann/json.hpp>
 
 bool get_factorial() {
-    auto r = cpr::Get(cpr::Url{"http://localhost:9080/factorial/5"});
+    auto r = cpr::Get(cpr::Url{"http://localhost:8000/factorial/5"});
     if (r.status_code != 200) {
         std::cerr << "Error: Expected status code 200, got " << r.status_code << std::endl;
         return false;

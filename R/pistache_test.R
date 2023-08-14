@@ -11,7 +11,7 @@ install_if_missing("jsonlite")
 
 
 get_factorial <- function() {
-  url <- "http://localhost:9080/factorial/5"
+  url <- "http://localhost:8000/factorial/5"
   response <- GET(url)
   
   if (status_code(response) != 200) {

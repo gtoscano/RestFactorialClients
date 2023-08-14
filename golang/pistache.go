@@ -8,7 +8,7 @@ import (
 )
 
 func getFactorial() bool {
-	url := "http://localhost:9080/factorial/5"
+	url := "http://localhost:8000/factorial/5"
 	resp, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Error:", err)

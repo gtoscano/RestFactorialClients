@@ -10,7 +10,7 @@ public class Main {
         try {
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI("http://localhost:9080/factorial/5"))
+                    .uri(new URI("http://localhost:8000/factorial/5"))
                     .build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 

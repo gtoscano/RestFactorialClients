@@ -2,7 +2,7 @@ using HTTP
 using JSON
 
 function get_factorial()
-    url = "http://localhost:9080/factorial/5"
+    url = "http://localhost:8000/factorial/5"
     response = HTTP.get(url)
 
     if response.status != 200
