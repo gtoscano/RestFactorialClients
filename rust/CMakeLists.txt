@@ -4,9 +4,6 @@ project(PistacheTest)
 # Path to Rust source file (adjust if needed)
 set(RUST_SOURCE_FILE "${CMAKE_CURRENT_SOURCE_DIR}/src/main.rs")
 
-# Output path for compiled binary
-set(OUTPUT_BINARY "${CMAKE_BINARY_DIR}/pistache_test")
-
 # Custom target to build Rust code using Cargo
 add_custom_target(
     BuildRust ALL
@@ -20,7 +17,7 @@ add_custom_target(
 add_custom_command(
     TARGET BuildRust
     POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/target/release/pistache_test" ${OUTPUT_BINARY}
+    COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/target/release/pistache_test" ${CMAKE_CURRENT_BINARY_DIR}
     COMMENT "Copying compiled binary to output directory"
 )
 

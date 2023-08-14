@@ -96,11 +96,27 @@ Rscript pistache_test.R
 
 ### Rust
 ```
+cd rust
+./pistache_test
+```
+or 
+```
 cargo build --release
 cd target/release
 ./pistache_test
 
 ```
+
+### Compile C++, C#, Rust indpendently
+C++, C#, and Rust, have their own CMakeLists.txt file. Therefore the user can do the following, in their respective source directory.
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
 
 ## Contributing
 
