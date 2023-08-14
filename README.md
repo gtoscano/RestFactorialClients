@@ -1,23 +1,26 @@
 # RestFactorialClient
 
-RestFactorialClient is a collection of client implementations that interact with a RESTful API to calculate the factorial of a given number. The clients are implemented in various programming languages, including C++, C#, Golang, Java, Julia, Octave, Python, R, and Rust.
+RestFactorialClient is a collection of client implementations that interact with a RESTful API to calculate the factorial of a given number. 
+
+In this repository, we provide integration examples demonstrating how to connect a factorial function implemented in a RESTful API server with client codes in languages such as C#, Go, Java, JavaScript, Julia, Octave, Python, and R. 
+
 
 
 ## Project Purpose
 
-The primary goal of RestFactorialClient is to explore various methods for calling C++ code from different programming languages. This exploration involved several key stages:
+The primary goal of RestFactorialClient is to explore various methods for calling external code from different programming languages. 
 
-1. **Using SWIG**: Initially, the project utilized SWIG (Simplified Wrapper and Interface Generator) to create portings and allow various programming languages to call C++ functions directly.
+These clients can connect to the different server examples:
 
-2. **Implementing a REST Client in C++ with Pistache**: The next step was to create a RESTful client inside C++ using the Pistache framework. This allowed for a web-based interaction with the C++ code.
 
-3. **Utilizing Third-Party Frameworks for External Calls**: Finally, the project expanded to include third-party frameworks that use external calls to a compiled C++ program. This stage involved the creation of two RESTful applications:
+- **PistacheFactorial**: A PistacheFactorial implementation that provides an endpoint to calculate the factorial of a given number. The project can be found [here](https://github.com/gtoscano/PistacheFactorial).
+    
 
-   - **FastAPIFactorial**: A FastAPI implementation that provides an endpoint to calculate the factorial of a given number. The project can be found [here](https://github.com/gtoscano/FastAPIFactorial).
+- **FastAPIFactorial**: A FastAPI implementation that provides an endpoint to calculate the factorial of a given number. The project can be found [here](https://github.com/gtoscano/FastAPIFactorial).
 
-   - **DjangoFactorial**: A Django implementation using the Django REST Framework to provide a similar factorial calculation endpoint. The project can be found [here](https://github.com/gtoscano/DjangoFactorial).
+- **DjangoFactorial**: A Django implementation using the Django REST Framework to provide a similar factorial calculation endpoint. The project can be found [here](https://github.com/gtoscano/DjangoFactorial).
 
-Through these methods, RestFactorialClient demonstrates various techniques for integrating C++ code into applications written in different programming languages. The project serves as a valuable reference for developers looking to leverage the power of C++ in diverse technological ecosystems.
+Through these methods, RestFactorialClient demonstrates various techniques for integrating code into applications written in different programming languages. 
 
 
 ## Usage
